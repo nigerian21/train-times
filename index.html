@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Train Schedule</title>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Train Time</h1>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                <h2></h2>
+                <h2 id="currentTime">The current time is: </h2>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">Current Train Schedule</h3>
+            </div>
+            <div>
+                <table id="trainTable">
+                    <tr>
+                        <th><i class="fas fa-train"></i> Train Name</th>
+                        <th><i class="far fa-paper-plane"></i> Destination</th>
+                        <th id="times"><i class="far fa-clock"></i> Frequency (min)</th>
+                        <th id="times"><i class="far fa-calendar-alt"></i> Next Arrival</th>
+                        <th id="times"><i class="fas fa-stopwatch"></i> Minutes Away</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Add Train</h3>
+                </div>
+                <div class="panel-body form-group">
+                    <form>
+                        <br>
+                        <b>Train Name</b>
+                        <input type="text" class="form-control" name="trDest" id="destinationInput" placeholder="Golden road train"
+                            required>
+                        <br>
+                        <b>Destination </b>
+                        <input type="text" class="form-control" name="trDest" id="destinationInput" placeholder="Nigeria"
+                            required>
+                        <br>
+                        <b>First Train Time (HH:mm - Military time) </b>
+                        <input type="text" class="form-control" name="trDest" id="destinationInput" placeholder=""
+                            required>
+                        <br>
+                        <b>Frequency (min) </b>
+                        <input type="text" class="form-control" name="trDest" id="destinationInput" placeholder=""
+                            required>
+                    </form>
+
+                    <button id="addTrainBtn" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            
+</body>
+
+</html>
